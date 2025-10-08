@@ -74,12 +74,6 @@
     letter-spacing: -0.02rem;
 }
 
-.single-content {
-    font-family: var(--font-serif);
-    font-size: var(--content-font-size);
-    line-height: 1.6;
-}
-
 .single-footer {
     display: flex;
     align-items: center;

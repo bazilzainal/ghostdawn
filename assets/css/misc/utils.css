@@ -39,10 +39,3 @@
     height: 100%;
     object-fit: cover;
 }
-
-/* Custom font styling for post content */
-.single-content {
-    font-family: var(--font-serif);
-    font-size: var(--content-font-size);
-    line-height: 1.6;
-}

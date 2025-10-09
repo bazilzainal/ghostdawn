@@ -30,17 +30,44 @@
 
 .feed-calendar {
     display: flex;
-    gap: 0.4rem;
+    flex-direction: column;
+    align-items: flex-start;
     min-width: 45px;
     margin-right: 1.5rem;
     font-size: 1.1rem;
     font-weight: 800;
     color: var(--brand-color);
     white-space: nowrap;
+    line-height: 1;
 }
 
 .feed-calendar-month {
     text-transform: uppercase;
+    margin-top: 0.2rem;
+}
+
+.feed-calendar-year {
+    margin-top: 0.2rem;
+}
+
+.feed-thumbnail {
+    width: 100px !important;
+    height: 50px !important;
+    margin-right: 2rem;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-shrink: 0 !important;
+    flex-grow: 0 !important;
+    flex-basis: 100px !important;
+    align-self: center;
+    background-color: var(--light-gray-color);
+}
+
+.feed-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .feed-title {
@@ -48,13 +75,14 @@
     padding-right: 1rem;
     margin-bottom: 0;
     overflow: hidden;
-    font-family: var(--gh-font-body, var(--font-sans));
+    font-family: IBM Plex Serif, var(--gh-font-body, var(--font-serif));
     font-size: 1.6rem;
-    font-weight: 400;
+    font-weight: 200;
     line-height: 1.3;
     text-overflow: ellipsis;
     letter-spacing: 0;
     white-space: nowrap;
+    align-self: center;
 }
 
 .feed-right {

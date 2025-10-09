@@ -44,7 +44,7 @@
 }
 
 .has-serif-body:not([class*=" gh-font-body"]):not([class^="gh-font-body"]) .single-excerpt {
-    font-family: Georgia, var(--gh-font-body, var(--font-serif));
+    font-family: var(--gh-font-body, var(--font-serif));
 }
 
 .single-media {

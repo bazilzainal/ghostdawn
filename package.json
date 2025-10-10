@@ -44,7 +44,11 @@
         "custom": {
             "navigation_layout": {
                 "type": "select",
-                "options": ["Logo on the left", "Logo in the middle", "Stacked"],
+                "options": [
+                    "Logo on the left",
+                    "Logo in the middle",
+                    "Stacked"
+                ],
                 "default": "Logo on the left"
             },
             "title_font": {
@@ -74,6 +78,10 @@
             },
             "white_logo_for_dark_mode": {
                 "type": "image"
+            },
+            "show_thumbnails_mobile": {
+                "type": "boolean",
+                "default": false
             },
             "show_author": {
                 "type": "boolean",

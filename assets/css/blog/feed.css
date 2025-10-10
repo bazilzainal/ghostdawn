@@ -117,3 +117,45 @@
     transition: transform 0.2s var(--animation-base);
     transform: translateX(2rem);
 }
+
+/* Mobile styles */
+@media (max-width: 767px) {
+    .feed-thumbnail {
+        display: none;
+    }
+    
+    .feed-calendar {
+        margin-right: 1rem;
+    }
+    
+    .feed-title {
+        font-size: 1.4rem;
+        padding-right: 0.5rem;
+    }
+    
+}
+
+/* Enhanced thumbnail styling for when it's visible */
+.feed-thumbnail {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s var(--animation-base);
+}
+
+.feed:hover .feed-thumbnail {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional: Show thumbnails on mobile with a special class */
+.feed-show-thumbnails-mobile .feed-thumbnail {
+    display: block;
+    width: 80px !important;
+    height: 40px !important;
+    margin-right: 1rem;
+    flex-basis: 80px !important;
+}
+
+@media (max-width: 767px) {
+    .feed-show-thumbnails-mobile .feed-thumbnail {
+        display: block;
+    }
+}
